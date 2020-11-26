@@ -1,0 +1,20 @@
+@mixin line(
+  $mt: 1em,
+  $mr: 0em,
+  $mb: 1em,
+  $ml: 0em,
+  $position: static,
+  $background: $black
+) {
+  content: "";
+  width: 2000px;
+  height: 2px;
+  display: block;
+  background-color: $black;
+  margin-top: $mt;
+  margin-right: $mr;
+  margin-bottom: $mb;
+  margin-left: $ml;
+  position: $position;
+  background: $background;
+}

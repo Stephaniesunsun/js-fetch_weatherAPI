@@ -1,0 +1,45 @@
+.head {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  margin-top: 0em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+span {
+  margin-top: 1em;
+}
+.head::after {
+  @include line($mt: 1m, $mb: 1em);
+}
+
+p {
+  margin: 0;
+}
+.head_temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .temp {
+    margin-top: 0.2em;
+  }
+  img {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-left: 1em;
+  }
+}
+
+.highandlow {
+  width: 30%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .high {
+    margin-right: auto;
+  }
+}

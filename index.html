@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <video class="weather_vid" poster="" autoplay muted loop>
+        <source src="" type="video/mp4">
+    </video>
+    <div class="head">
+        <span></span>
+         <h2 class="city_name"></h2>
+         <p class="description"></p>
+         <div class="head_temp">
+            <h1 class="temp"></h1>
+            <img class="icon"/>
+        </div>
+         <div class="highandlow">
+             <p class="high"></p>
+             <p class="low"></p>
+         </div>
+    </div>
+ <!--
+   <div class="temp_container">
+       <div class="temp_current">use another api here to get 
+           the temp every hour to a specific city
+       </div>
+      
+       <div class="temp_week">
+           <div class="day">
+               <p class="week day1">Tuesday</p>
+               <p class="high">H:27</p>
+               <p class="low">L:19</p>
+           </div>
+           <div class="day">
+               <p class="week day2">Tuesday</p>
+               <p class="high">H:27</p>
+               <p class="low">L:19</p>
+           </div>
+           <div class="day">
+               <p class="week day3">Tuesday</p>
+               <p class="high">H:27</p>
+               <p class="low">L:19</p>
+           </div>
+           <div class="day">
+               <p class="week day4">Tuesday</p>
+               <p class="high">H:27</p>
+               <p class="low">L:19</p>
+           </div>
+           <div class="day">
+               <p class="week day5">Tuesday</p>
+               <p class="high">H:27</p>
+               <p class="low">L:19</p>
+           </div>
+           <div class="day">
+               <p class="week day6">Tuesday</p>
+               <p class="high">H:27</p>
+               <p class="low">L:19</p>
+           </div>
+       </div>
+   </div>
+   -->
+   <div class="moreinfo">
+     <div class="first">
+       <div class="sunrise">
+           <p>feels like</p>
+           <h2 class="feels_like">1</h2>
+       </div>
+       <div class="visibility">
+             <p>visibility</p>
+             <h2 class="visible">1</h2>
+        </div>
+    </div>
+    <div class="second">
+        <div class="rain">
+            <p>pressure</p>
+            <h2 class="pressure">1</h2>
+        </div>
+        <div class="humidity">
+            <p>humidity</p>
+            <h2 class="humid">1</h2>
+        </div>
+    </div>
+    <div class="third">
+        <div class="moon">
+            <p>wind direction</p>
+            <h2 class="wind_dir">1</h2>
+        </div>
+        <div class="uv">
+            <p>UV index</p>
+            <h2 class="uv_index">1</h2>
+        </div>
+    </div>
+
+   </div>
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>

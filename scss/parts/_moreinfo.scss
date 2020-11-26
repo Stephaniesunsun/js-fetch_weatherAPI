@@ -1,0 +1,37 @@
+.moreinfo {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+.first,
+.second,
+.third {
+  display: flex;
+  margin-top: 4em;
+  margin-bottom: 1em;
+  align-items: flex-end;
+}
+.first::after,
+.second::after,
+.third::after {
+  @include line($position: absolute, $mt: 6em, $ml: -40%, $mr: -40%);
+}
+.first > :first-child,
+.second > :first-child,
+.third > :first-child {
+  margin-right: auto;
+}
+.first > div,
+.second > div,
+.third > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //align-items: center;
+}
+
+.visible,
+.humid,
+.uv_index {
+  align-self: flex-end;
+}

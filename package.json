@@ -1,0 +1,19 @@
+{
+  "name": "js-weather",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.13",
+    "cowsay": "^1.4.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}
