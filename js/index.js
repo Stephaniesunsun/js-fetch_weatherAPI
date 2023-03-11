@@ -22,7 +22,7 @@ if(navigator.geolocation){
 }else{
     alert('browser does not support geolocation');
 }
-const key="7bd18960bb8156d89486595623021773";
+const key= process.env.API_KEY
 function setPosition(position){
     let latitude=position.coords.latitude;
     let longitude=position.coords.longitude;
@@ -77,9 +77,6 @@ function showWeather(){
 }
 function changeBack(){
     const filterString=weather.icon;
-    //const filteredString=filterString.split('').filter((str)=>str.toLowerCase()); //filter() is an array function,need to 'split'
-    //need hierachy here. snow>thundery>rain>fog>cloudy>sunny/clear
-    
     if(filterString.includes("snow") || filterString.includes("snowy")){
         video.innerHTML="<source src='../vid/snow.mp4'>";
     }else if(filterString.includes("thundery") || filterString.includes("thunder")){
